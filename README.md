@@ -1,4 +1,5 @@
-Images/Crypto20.png
+
+![Alt text](image.png)
 **Project Description: Data Visualization of Top 20 Cryptocurrencies Trends**
 
 # Overview:
