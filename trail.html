@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto 20</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .left-image,
+    .right-image {
+        width: 30%;
+        height: auto;
+    }
+
+    .center-text {
+        color: white;
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+        flex: 1;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left-image,
+        .right-image {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <img class="left-image" src="left_image_url.jpg" alt="Left Image">
+        <div class="center-text">Crypto 20</div>
+        <img class="right-image" src="right_image_url.jpg" alt="Right Image">
+    </div>
+</body>
+</html>
