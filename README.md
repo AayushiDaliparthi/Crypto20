@@ -2,7 +2,9 @@
 
 # **Project Description: Data Visualization of Top 20 Cryptocurrencies Trends**
 
-![Cryptocurrencies](https://github.com/AayushiDaliparthi/Crypto20/assets/105176210/0b6781cf-e3c8-47b7-a78a-fd462b5e6f51)
+
+![shutterstock_1018901758-scaled](https://github.com/AayushiDaliparthi/Crypto20/assets/105176210/5def5e64-eff9-42b8-9516-1629c48aea54)
+
 
 **Overview:**
 Creating a data visualization using Yahoo Finance data for 20 cryptocurrencies.
