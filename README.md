@@ -1,15 +1,14 @@
 
-![Alt text](image.png)
+
 **Project Description: Data Visualization of Top 20 Cryptocurrencies Trends**
 
 # Overview:
-Creating a data visualization using Yahoo Finance data for the top 20 cryptocurrencies.
+Creating a data visualization using Yahoo Finance data for 20 cryptocurrencies.
 The visualization allows users to review trends for the top cryptocurrencies.
 
 # Main Features:
 HTML code-based visualization for easy access and interaction.
-Homepage displays the top 5 cryptocurrencies with a "Click Here" option for more details.
-Detailed information about all top 20 cryptocurrencies available upon clicking.
+Homepage displays the top 5 cryptocurrencies with a correlated Heat map
 
 ```python
 Coding Techniques Used:
@@ -22,17 +21,16 @@ Utilized HTML to create the structure of the webpage.
 Divided content into sections for clarity and organization.
 
 ```python
-# CSS Styling:
+# plotly, json:
 ```
 
-Employed CSS for styling the webpage, including colors, fonts, and layout.
-Used CSS Flexbox for responsive design, ensuring the visualization looks good on different screen sizes.
+Employed plotly in json file to getch data from python to create a visualization 
 
 ```python
 **Data Visualization:**
 ```
 Used Yahoo Finance API to fetch real-time data for the top 20 cryptocurrencies.
-Created dynamic charts and graphs using libraries like Chart.js or D3.js to visualize the data.
+Created dynamic charts and graphs using libraries like plotly, d3.js to visualize the data.
 
 ```python
 **Interactivity:**
@@ -44,18 +42,11 @@ Allowed users to interact with the data visualization, enhancing the user experi
 **Responsive Design:**
 ```
 Ensured the data visualization is responsive and looks good on both desktop and mobile devices.
-Used media queries to adjust the layout and styling based on the screen size.
-
-```python
-**Accessibility:**
-```
-Ensured the webpage is accessible to users with disabilities by following accessibility best practices.
-Used semantic HTML elements and provided alternative text for images.
 
 ```python
 **Code Optimization:**
 ```
-Optimized the code for performance by minifying CSS and JavaScript files.
+Optimized the code for performance by and JavaScript files.
 Used asynchronous loading of resources to improve page loading speed.
 
 ```python
@@ -67,16 +58,3 @@ Used browser developer tools for debugging and fixing issues.
 **Documentation:**
 Documented the code using comments to make it easier for other developers to understand and maintain the code.
 Provided clear instructions for users on how to interact with the data visualization.
-
-
-# Homepage:
-Displays the top 5 cryptocurrencies with their current trends.
-"Click Here" option for users to access detailed information.
-
-# Detailed Information Page:
-Provides detailed trends and data for all top 20 cryptocurrencies.
-Allows users to analyze historical data, market trends, and more.
-
-# Contact Information:
-Contact us section for users to reach out for queries or feedback.
-Ensures user engagement and support.
