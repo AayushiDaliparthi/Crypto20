@@ -15,13 +15,13 @@ Coding Techniques Used:
 ```
 
 ```python
-# HTML Structure:
+HTML Structure:
 ```
 Utilized HTML to create the structure of the webpage.
 Divided content into sections for clarity and organization.
 
 ```python
-# plotly, json:
+plotly, json:
 ```
 
 Employed plotly in json file to getch data from python to create a visualization 
@@ -58,3 +58,16 @@ Used browser developer tools for debugging and fixing issues.
 **Documentation:**
 Documented the code using comments to make it easier for other developers to understand and maintain the code.
 Provided clear instructions for users on how to interact with the data visualization.
+
+Requirements:
+Flask  ===   2.2.5
+geojson  === 3.1.0
+json5  ===  0.9.6
+matplotlib  === 3.8.0
+pandas   === 2.1.4
+plotly  === 5.9.0
+psycopg2   ===  2.9.9
+seaborn  === 0.12.2
+SQLAlchemy  === 2.0.21
+yfinance  === 0.2.38
+
