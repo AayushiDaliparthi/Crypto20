@@ -1,12 +1,12 @@
 
 
-**Project Description: Data Visualization of Top 20 Cryptocurrencies Trends**
+# **Project Description: Data Visualization of Top 20 Cryptocurrencies Trends**
 
-# Overview:
+**Overview:**
 Creating a data visualization using Yahoo Finance data for 20 cryptocurrencies.
 The visualization allows users to review trends for the top cryptocurrencies.
 
-# Main Features:
+**Main Features:**
 HTML code-based visualization for easy access and interaction.
 Homepage displays the top 5 cryptocurrencies with a correlated Heat map
 
