@@ -27,6 +27,14 @@ Divided content into sections for clarity and organization.
 Employed plotly in json file to getch data from python to create a visualization 
 
 ```python
+**Data Storage**
+To facilitate collaboration and data sharing with other project stakeholders, housed the data in AWS (Amazon Web Services). AWS offers a scalable and reliable platform for storing and accessing data securely from anywhere, enabling seamless collaboration and innovation.
+
+```python
+**Data Design**
+Designed proper database schema in pgAdmin, ensuring it aligned with our data model and requirements
+
+```python
 **Data Visualization:**
 ```
 Used Yahoo Finance API to fetch real-time data for the top 20 cryptocurrencies.
