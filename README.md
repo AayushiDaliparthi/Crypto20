@@ -15,7 +15,7 @@ HTML code-based visualization for easy access and interaction.
 Homepage displays the top 5 cryptocurrencies with a correlated Heat map
 
 ```python
-Coding Techniques Used:
+##Coding Techniques Used:
 ```
 
 ```python
