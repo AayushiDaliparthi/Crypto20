@@ -4,30 +4,32 @@ from psycopg2 import sql
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# PostgreSQL database connection details
-PGEND_POINT = 'database-1.chueoayw4q5g.ca-central-1.rds.amazonaws.com'
-PGDATABASE_NAME = 'Crypto20_db'
-PGUSER_NAME = 'postgres'
-PGPASSWORD = '12345678'
+PGEND_POINT = 'database-1.chueoayw4q5g.ca-central-1.rds.amazonaws.com' # End_point
+PGDATABASE_NAME = 'Crypto20_db' # Database Name example: youtube_test_db
+PGUSER_NAME = 'postgres' # UserName
+PGPASSWORD = '12345678' # Password
 
 def connect():
-    # Set up a connection to the PostgreSQL server
-    conn_string = f"host={PGEND_POINT} port=5432 dbname={PGDATABASE_NAME} user={PGUSER_NAME} password={PGPASSWORD}"
+    
+    # Set up a connection to the postgres server.
+    conn_string = "host="+ PGEND_POINT +" port="+ "5432" +" dbname="+ PGDATABASE_NAME +" user=" + PGUSER_NAME \
+                  +" password="+ PGPASSWORD
+    
     conn = psycopg2.connect(conn_string)
     print("Connected!")
 
     # Create a cursor object
     cursor = conn.cursor()
+    
     return conn, cursor
 
-# Connect to the PostgreSQL database
 conn, cursor = connect()
 
-# Execute SQL query to fetch data from the database for Avalanche
-query = sql.SQL("""
-    SELECT * FROM public."Avalanche"
-    ORDER BY "Date" ASC
-    LIMIT 100
+
+# Creating simple table
+query_menu = sql.SQL("""
+SELECT * FROM public."Avalanche"
+ORDER BY "Date" ASC LIMIT 100
 """)
 
 # Execute SQL query to fetch data from the database for Binance
@@ -155,26 +157,8 @@ query_usdc_coin = sql.SQL("""
     ORDER BY "Date" ASC
     LIMIT 100
 """)
+cur = conn.cursor()
+cur.execute(query_menu)
+rows = print(cur.fetchall())
 
-# Execute SQL query to fetch data from the database for xrp
-query_xrp = sql.SQL("""
-    SELECT * FROM public."xrp"
-    ORDER BY "Date" ASC
-    LIMIT 100
-""")
 
-cursor.execute(query)
-rows = cursor.fetchall()
-
-# Close cursor and connection
-cursor.close()
-conn.close()
-
-# Convert fetched data into a DataFrame
-df = pd.DataFrame(rows, columns=["Date", "Open", "High", "Low", "Close", "Adj Close", "Volume"])
-
-# Plot heatmap
-plt.figure(figsize=(12, 8))
-sns.heatmap(df.corr(), annot=True, cmap='coolwarm', fmt=".2f")
-plt.title('Correlation Heatmap of Cryptocurrencies Opening Price')
-plt.show()
